@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NutriMate BusinessLogic</title>
+    <link rel="stylesheet" href="css/businessLogic.css">
 </head>
 <body>
     
@@ -14,14 +15,15 @@
                 <li><a href="./businessLogic.html">Features</a></li>
             </ul>
             <ul class="nav right">
-                <li><button">ENG</button></li>
-                <li><a href="./login.html">Log In</a></li>
+                <li><a href="#">ENG</a></li>
+                <li><a id="login" href="./login.html">Log In</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <img src="./img/logo.png" alt="NutriMate logo" />
+        <h1>NutriMate</h1>
         <h2>Business Logic Description</h2>
 
         <h3>Usage of NutriMate</h3>
@@ -44,7 +46,7 @@
     </main>    
 
     <footer>
-        <div>
+        <div class="footer-sections">
             <section>
                 <h4>Contact Us</h4>
                 <p>Email: support@nutrimate.com</p>
@@ -53,10 +55,11 @@
 
             <section>
                 <h4>Follow Us</h4>
-                <ul>
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">Instagram</a></li>
-                </ul>
+                <div class="social-links">
+                    <a href="#"><img src="img/footer/facebook-sign.png" alt="Facebook icon" /> Facebook</a>
+                    <a href="#"><img src="img/footer/inst-sign.png" alt="Instagram icon" /> Instagram</a>
+                    <a href="#"><img src="img/footer/telegram-sign.png" alt="Telegram icon" /> Telegram</a>
+                </div>
             </section>
 
             <section>
@@ -67,7 +70,7 @@
                 </form>
             </section>
         </div>
-        <div>
+        <div class="copyright">
             <p>&copy; 2024 NutriMate. All rights reserved.</p>
         </div>
     </footer>
