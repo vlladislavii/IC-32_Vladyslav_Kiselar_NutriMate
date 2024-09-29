@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Schedule page - NutriMate</title>
+    <link rel="stylesheet" href="css/schedule.css">
 </head>
 <body>
     
     <header>
         <div>
-            <h2>Welcome, USERNAME</h2>
+            <h3>Welcome, USERNAME</h3>
         </div>
         <nav>
-            <ul>
-                <li><button">Exit from account</button></li>
+            <ul class="nav">
+                <li><a href="./index.html">Exit from account</a></li>
                 <li><a href="./calculate.html">Calculate</a></li>
                 <li><a href="./home.html">Home</a></li>
                 <li><a href="./schedule.html">Schedule</a></li>
@@ -23,7 +24,7 @@
     </header>
 
     <main>
-        <div>
+        <div class="pre-table">
             <p>Aimed calories (per day): NUMBER | Recommended calories (per day): NUMBER</p>
         </div>
 
@@ -33,52 +34,52 @@
                 <th>Breakfast</th>
                 <th>Lunch</th>
                 <th>Dinner</th>
-                <th>Total kcal</th>
+                <th id="yellow">Total kcal</th>
             </tr>
             <tr>
-                <td>Monday</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Tuesday</td>
+                <td id="day">Monday</td>
                 <td></td>
                 <td></td>
                 <td></td>
                 <td></td>
             </tr>
             <tr>
-                <td>Wednesday</td>
+                <td id="day">Tuesday</td>
                 <td></td>
                 <td></td>
                 <td></td>
                 <td></td>
             </tr>
             <tr>
-                <td>Thursday</td>
+                <td id="day">Wednesday</td>
                 <td></td>
                 <td></td>
                 <td></td>
                 <td></td>
             </tr>
             <tr>
-                <td>Friday</td>
+                <td id="day">Thursday</td>
                 <td></td>
                 <td></td>
                 <td></td>
                 <td></td>
             </tr>
             <tr>
-                <td>Saturday</td>
+                <td id="day">Friday</td>
                 <td></td>
                 <td></td>
                 <td></td>
                 <td></td>
             </tr>
             <tr>
-                <td>Sunday</td>
+                <td id="day">Saturday</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td id="day">Sunday</td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -86,18 +87,33 @@
             </tr>
         </table>
 
-        <p>Last update: DATE</p>
+        <div class="info-container">
+            <p class="last-update">Last update: DATE</p>
+            <div class="right-section">
+                <p>Week NUMBER</p>
+                <a href="./history.html">My NutriHistory</a>
+            </div>
+        </div>
+        
 
-        <p>Week NUMBER</p>
-        <p>My NutriHistory</p>
-
-        <div>
-            <h3>Search for product here:</h3>
-            <input type="text" placeholder="Enter text to search">
-            <button>Search</button>
+        <div class="search-delete-container">
+            <div class="search-bar">
+                <h3>Search for product here:</h3>
+                <input type="text" placeholder="Enter text to search">
+                <button>Search</button>
+            </div>
+        
+            <div class="delete-container">
+                <h3>Delete product here:</h3>
+                <p><input type="text" placeholder="Day, Breakfast, ID"> <button>Delete</button></p>
+            </div>
         </div>
 
-        <div>
+        <div class="reset-container">
+            <button>Reset schedule</button>
+        </div>
+
+        <div class="founded">
             <h4>Amount of products found: AMOUNT</h4>
             <ol>
                 <li>PRODUCT 1</li>
@@ -105,9 +121,6 @@
             </ol>
             <p><input type="text" placeholder="Day, Breakfast, ID, Amount"> <button>Add</button></p>
         </div>
-
-        <p><input type="text" placeholder="Day, Breakfast, ID"> <button>Detele</button></p>
-        <button>Reset schedule</button>
     </main>    
 
     <footer>

@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Settings page - NutriMate</title>
+    <link rel="stylesheet" href="css/settings.css">
 </head>
 <body>
     
     <header>
         <div>
-            <h2>Welcome, USERNAME</h2>
+            <h3>Welcome, USERNAME</h3>
         </div>
         <nav>
-            <ul>
-                <li><button">Exit from account</button></li>
+            <ul class="nav">
+                <li><a href="./index.html">Exit from account</a></li>
                 <li><a href="./calculate.html">Calculate</a></li>
                 <li><a href="./home.html">Home</a></li>
                 <li><a href="./schedule.html">Schedule</a></li>
@@ -65,27 +66,31 @@
             </table>
         </section>
 
-        <p>The account was created in DATE;</p>
-        <p>You can <a href="#">update your account info.</a></p>
+        <div class="p-container">
+            <p>The account was created in DATE;</p>
+            <p>You can <a href="#">update your account info.</a></p>
+        </div>
 
-        <section>
-            <h3>General settings</h3>
-            <p>Language <span>En</span></p>
-            <p>Dark Theme <input type="checkbox" checked></p>
-        </section>
-
-        <section>
-            <h3>Password changes</h3>
-            <form action="#" method="post">
-                <label for="current-password">Current password</label>
-                <input type="password" id="current-password" name="current-password"><br>
-
-                <label for="new-password">New password</label>
-                <input type="password" id="new-password" name="new-password"><br>
-
-                <button type="submit">Change</button>
-            </form>
-        </section>
+        <div class="settings-container">
+            <section class="general-settings">
+                <h3>General settings</h3>
+                <p>Language <button>En</button></p>
+                <p>Dark Theme <input type="checkbox" checked></p>
+            </section>
+    
+            <section class="password-changes">
+                <h3>Password changes</h3>
+                <form action="#" method="post">
+                    <label for="current-password">Current password</label>
+                    <input type="password" id="current-password" name="current-password"><br>
+    
+                    <label for="new-password">New password</label>
+                    <input type="password" id="new-password" name="new-password"><br>
+    
+                    <button type="submit">Change</button>
+                </form>
+            </section>
+        </div>
     </main>  
 
     <footer>

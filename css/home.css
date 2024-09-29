@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: Inter, sans-serif;
+    font-feature-settings: 'liga' 1, 'calt' 1;
+}
+
+@supports (font-variation-settings: normal) {
+    :root {
+        font-family: InterVariable, sans-serif;
+    }
+}
+
+body {
+    font-weight: lighter;
+    background-color: #D4E9CB;
+    color: #000000;
+}
+
+header {
+    background-color: #28642E;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+nav {
+    background-color: #28642E;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.nav {
+    display: flex;
+    list-style-type: none;
+    position: relative;
+	text-align: center;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+.nav a {
+    color: white;
+    font-weight: 200;
+    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    padding: 0 10px;
+}
+
+nav ul li a:hover {
+	background-color: #D4E9CB;
+	color: #28642E;
+    padding: 30px 10px;
+}
+
+.link {
+	transition: 0.5s;
+    margin-right: 10px;
+} 
+
+header h3 {
+    font-weight: 100;
+    color: #AFAD1E;
+    padding-top: 20px;
+}
+
+main {
+    background-color: #D4E9CB; /* Matches the light green background color */
+    padding-bottom: 157px;
+    margin: 0;
+}
+
+main div {
+    margin: 20px;
+    margin-bottom: 320px;
+}
+
+main p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333; /* Darker color for readability */
+    padding: 5px;
+}
+
+main h3, h4 {
+    font-size: 20px; /* Ensures h3 is larger */
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #000; /* Black text */
+    padding: 5px;
+}
+
+main h4 {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+main h3 strong {
+    font-size: 22px; /* Slightly bigger for emphasis */
+    color: #000;
+}
+
+main h4 strong {
+    color: #357a38; /* Green color matching the prototype's text color */
+}
+
+strong {
+    font-weight: bold;
+}
+
+main p a {
+    color: #357a38; /* Matching green color for links */
+    text-decoration: none;
+}
+
+main p a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #28642E;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}

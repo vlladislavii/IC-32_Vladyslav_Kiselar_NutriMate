@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>History page - NutriMate</title>
+    <link rel="stylesheet" href="css/history.css">
 </head>
 <body>
     
     <header>
         <div>
-            <h2>Welcome, USERNAME</h2>
+            <h3>Welcome, USERNAME</h3>
         </div>
         <nav>
-            <ul>
-                <li><button">Exit from account</button></li>
+            <ul class="nav">
+                <li><a href="./index.html">Exit from account</a></li>
                 <li><a href="./calculate.html">Calculate</a></li>
                 <li><a href="./home.html">Home</a></li>
                 <li><a href="./schedule.html">Schedule</a></li>
@@ -23,7 +24,7 @@
     </header>
 
     <main>
-        <div>
+        <div class="pre-table">
             <p>Aimed calories (per day): NUMBER | Recommended calories (per day): NUMBER</p>
         </div>
 
@@ -33,52 +34,52 @@
                 <th>Breakfast</th>
                 <th>Lunch</th>
                 <th>Dinner</th>
-                <th>Total kcal</th>
+                <th id="yellow">Total kcal</th>
             </tr>
             <tr>
-                <td>Monday</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>Tuesday</td>
+                <td id="day">Monday</td>
                 <td></td>
                 <td></td>
                 <td></td>
                 <td></td>
             </tr>
             <tr>
-                <td>Wednesday</td>
+                <td id="day">Tuesday</td>
                 <td></td>
                 <td></td>
                 <td></td>
                 <td></td>
             </tr>
             <tr>
-                <td>Thursday</td>
+                <td id="day">Wednesday</td>
                 <td></td>
                 <td></td>
                 <td></td>
                 <td></td>
             </tr>
             <tr>
-                <td>Friday</td>
+                <td id="day">Thursday</td>
                 <td></td>
                 <td></td>
                 <td></td>
                 <td></td>
             </tr>
             <tr>
-                <td>Saturday</td>
+                <td id="day">Friday</td>
                 <td></td>
                 <td></td>
                 <td></td>
                 <td></td>
             </tr>
             <tr>
-                <td>Sunday</td>
+                <td id="day">Saturday</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td id="day">Sunday</td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -86,10 +87,11 @@
             </tr>
         </table>
 
-        <p>Week NUMBER</p>
-
-        <button>LEFT ARROW</button>
-        <button>RIGHT ARROW</button>
+        <div class="week-controls">
+            <button class="arrow-btn" id="left-arrow">&larr;</button>
+            <p>Week NUMBER</p>
+            <button class="arrow-btn" id="right-arrow">&rarr;</button>
+        </div>
     </main>    
 
     <footer>

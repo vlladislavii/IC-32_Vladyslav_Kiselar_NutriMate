@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: Inter, sans-serif;
+    font-feature-settings: 'liga' 1, 'calt' 1;
+}
+
+@supports (font-variation-settings: normal) {
+    :root {
+        font-family: InterVariable, sans-serif;
+    }
+}
+
+body {
+    font-weight: lighter;
+    background-color: #D4E9CB;
+    color: #000000;
+}
+
+header {
+    background-color: #28642E;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+nav {
+    background-color: #28642E;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.nav {
+    display: flex;
+    list-style-type: none;
+    position: relative;
+	text-align: center;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+.nav a {
+    color: white;
+    font-weight: 200;
+    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    padding: 0 10px;
+}
+
+nav ul li a:hover {
+	background-color: #D4E9CB;
+	color: #28642E;
+    padding: 30px 10px;
+}
+
+.link {
+	transition: 0.5s;
+    margin-right: 10px;
+} 
+
+header h3 {
+    font-weight: 100;
+    color: #AFAD1E;
+    padding-top: 20px;
+}
+
+main {
+    padding: 10px;
+    margin: 20px;
+}
+
+main .pre-table p {
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th, table td {
+    border: 1px solid #000;
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: #3DA748;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+}
+
+#day {
+    background-color: #3DA748;
+    color: rgb(0, 0, 0);
+    font-weight: 100;
+}
+
+#yellow {
+    background-color: #DDDF38;
+}
+
+table tr td {
+    background-color: #CDF7CD;
+}
+
+table td:last-child {
+    text-align: center;
+    font-weight: bold;
+}
+
+table tr td:last-child {
+    background-color: #FF471A;
+    color: white;
+}
+
+table tr td:last-child.green {
+    background-color: green;
+    color: white;
+}
+
+.info-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+.info-container a {
+    color: #000000;
+}
+
+.last-update {
+    text-align: left;
+}
+
+.right-section {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.search-delete-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+.reset-container button {
+    float: right;
+    width: 283px;
+}
+
+input[type="text"] {
+    width: 200px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+button {
+    background-color: #28642E;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 4px;
+    border: #28642E 1px solid;
+}
+
+button:hover {
+    background-color: #D4E9CB;
+    color: #28642E;
+    border: #28642E 1px solid;
+}
+
+.founded ol {
+    margin: 15px 17px;
+}
+
+footer {
+    background-color: #28642E;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}

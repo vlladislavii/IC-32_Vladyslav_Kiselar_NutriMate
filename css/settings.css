@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-family: Inter, sans-serif;
+    font-feature-settings: 'liga' 1, 'calt' 1;
+}
+
+@supports (font-variation-settings: normal) {
+    :root {
+        font-family: InterVariable, sans-serif;
+    }
+}
+
+body {
+    font-weight: lighter;
+    background-color: #D4E9CB;
+    color: #000000;
+}
+
+header {
+    background-color: #28642E;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+nav {
+    background-color: #28642E;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.nav {
+    display: flex;
+    list-style-type: none;
+    position: relative;
+	text-align: center;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+.nav a {
+    color: white;
+    font-weight: 200;
+    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    padding: 0 10px;
+}
+
+nav ul li a:hover {
+	background-color: #D4E9CB;
+	color: #28642E;
+    padding: 30px 10px;
+}
+
+.link {
+	transition: 0.5s;
+    margin-right: 10px;
+} 
+
+header h3 {
+    font-weight: 100;
+    color: #AFAD1E;
+    padding-top: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+main h3 {
+    color: #357a38; /* Dark green title color */
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+table {
+    width: 60%; /* Adjust table width */
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    margin: 0px 300px;
+}
+
+table td {
+    border: 1px solid #000000; /* Dark green border */
+    padding: 8px 12px;
+    font-size: 16px;
+    color: #333; /* Dark text */
+}
+
+table td:first-child {
+    background-color: #B2D0B5; /* Light greenish color */
+    font-weight: bold; /* Optional: to make the first column bold */
+    color: #333;
+}
+
+/* Color for the last column */
+table td:last-child {
+    background-color: #CDF7CD; /* Light reddish color */
+    font-weight: bold; /* Optional: to make the last column bold */
+    color: #333;
+}
+
+main p {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+main p a {
+    color: #357a38;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main p a:hover {
+    text-decoration: underline;
+}
+
+/* Container to hold the two paragraphs */
+.p-container {
+    display: flex;
+    justify-content: space-between; /* Distribute space between the items */
+    margin-bottom: 20px;
+}
+
+.p-container p {
+    margin: 0;
+}
+
+/* Optional: To control text alignment */
+.p-container p:first-child {
+    text-align: left; /* Ensure the first p is aligned to the left */
+}
+
+.p-container p:last-child {
+    text-align: right; /* Ensure the second p is aligned to the right */
+}
+
+
+/* General Settings Section */
+section {
+    margin-bottom: 30px;
+}
+
+section h3 {
+    font-size: 20px;
+    color: #357a38;
+    margin-bottom: 10px;
+}
+
+section p span {
+    font-weight: bold;
+    color: #357a38;
+}
+
+.settings-container {
+    display: flex;
+    justify-content: space-between; /* Space between the two sections */
+}
+
+/* General Settings Section */
+.general-settings {
+    flex: 1; /* Allow it to take 50% of the space */
+    margin-right: 30px; /* Add spacing between the two sections */
+}
+
+.general-settings h3 {
+    font-size: 20px;
+    color: #357a38;
+    margin-bottom: 10px;
+}
+
+.general-settings p {
+    padding: 5px 205px;
+}
+
+/* Password Change Section */
+.password-changes {
+    flex: 1; /* Allow it to take 50% of the space */
+    margin-left: 30px;
+}
+
+.password-changes h3 {
+    font-size: 20px;
+    color: #357a38;
+    margin-bottom: 10px;
+}
+
+form {
+    margin: 0px 100px;
+}
+
+form label {
+    font-size: 16px;
+    display: block;
+    margin: 10px 0 5px 0;
+    color: #333;
+}
+
+form input[type="password"] {
+    width: 350px;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #357a38;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #357a38;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+form button {
+    width: 350px;
+}
+
+form button:hover {
+    background-color: #285f2d;
+}
+
+footer {
+    background-color: #28642E;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
